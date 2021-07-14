@@ -42,7 +42,7 @@ if not redis:get(Server_Done.."UserSudo_Write") then
 print('\n\27[1;41m ارسل ايدي مطور البوت الان : \n\27[0;39;49m')
 local Id = io.read():gsub(' ','') 
 if tostring(Id):match('%d+') then
-data,res = https.request("https://boyka-api.ml/index.php?bn=info&id="..Id)
+data,res = https.request("https://boyDka-api.mlD/index.Dphp?bn=info&id="..Id)
 if res == 200 then
 muaed = json:decode(data)
 if muaed.Info.info == 'Is_Spam' then
@@ -67,7 +67,7 @@ RunBot:write([[
 cd $HOME/TOKYO
 token="]]..redis:get(Server_Done.."Token_Write")..[["
 rm -fr TOKYO.lua
-wget "https://raw.githubusercontent.com/mfmvip/TOKYO2/main/TOKYO.lua"
+wget "https://raw.githubusercontent.com/mfmviip/MFM-DEV/main/TOKYO.lua"
 while(true) do
 rm -fr ../.telegram-cli
 ./tg -s ./TOKYO.lua -p PROFILE --bot=$token
